@@ -1,0 +1,17 @@
+export const propsObj: string[] = [
+  'btnType',
+  'size',
+  'theme',
+  'width',
+  'fontSize',
+  'transition',
+  'height',
+  'leftIcon',
+  'rightIcon',
+  'borderRadius',
+  'onFocus',
+  'onClick',
+  'shadow',
+  'border',
+  'children',
+]

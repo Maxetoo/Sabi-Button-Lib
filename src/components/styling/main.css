@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+.btn-stack--main {
+    width: 100%;
+    padding: 0.5rem;
+    font-family: 'Varela Round', sans-serif;
+    overflow: auto;
+}
+
+.sabi--btn {
+    margin: 1rem;
+    height: 30px;
+    display: inline-flex;
+    padding: 1rem;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: auto;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.sabi-main-icon {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3em;
+}
+
+.sabi--left {
+    margin-right: 0.4rem;
+}
+
+.sabi--right {
+    margin-left: 0.4rem;
+}
+
+.whole--sabibtn-solid {
+    border: none;
+    background: #3182ce;
+    color: #f5f5f5;
+}
+
+.sabi-black {
+    background: #000000;
+    color: #f5f5f5;
+}
+
+.sabi-white {
+    background: #f5f5f5;
+    color: #000000;
+}
+
+.sabi-cool {
+    background: #0f0e17;
+    color: #f5f5f5;
+}
+
+.sabi-green {
+    background: #38a169;
+    color: #f5f5f5;
+}
+
+.sabi-pink {
+    background: #e53170;
+    color: #f5f5f5;
+}
+
+.sabi-orange {
+    background: #e67f09;
+    color: #f5f5f5;
+}
+
+.sabi-purple {
+    background: #805ad5;
+    color: #f5f5f5;
+}
+
+.sabi-yellow {
+    background: #ecc94b;
+    color: #000000;
+}
+
+.sabi-blue {
+    background: #3182ce;
+    color: #f5f5f5;
+}
+
+.sabi-cyan {
+    background: #0bc5ea;
+    color: #000000;
+}
+
+.sabi-blossom {
+    color: #faeee7;
+    background: #33272a;
+}
+
+.sabi-blossom-shade {
+    color: #33272a;
+    background: #faeee7;
+}
+
+.sabi-tint {
+    background: #ffc0ad;
+    color: #55423d;
+}
+
+.sabi-cream {
+    background: #fef6e4;
+    color: #001858;
+}
+
+.sabi-red {
+    background: #e53e3e;
+    color: #f5f5f5;
+}
+
+.whole--sabibtn-outline {
+    border: none;
+    background: none;
+    color: #0d0d0d;
+}
+
+.whole--sabibtn-faint {
+    border: none;
+    background: none;
+    color: #0d0d0d;
+}
+
+.whole--sabibtn-glance {
+    border: none;
+    color: #f5f5f5;
+}
+
+.whole--sabibtn-glance:hover {
+    background: none;
+}
+
+.whole--sabibtn-link {
+    border: none;
+    background: none;
+}
+
+.whole--sabibtn-link:hover {
+    text-decoration: underline;
+}
+
+.whole--sabibtn-glow {
+    background: #0d0d0d;
+    color: #f5f5f5;
+    border: none;
+    position: relative;
+    z-index: 0;
+}
+
+.whole--sabibtn-glow:before {
+    content: '';
+    background: linear-gradient( 45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+.whole--sabibtn-glow:active {
+    color: #000;
+}
+
+.whole--sabibtn-glow:active:after {
+    background: transparent;
+}
+
+.whole--sabibtn-glow:hover:before {
+    opacity: 1;
+}
+
+.whole--sabibtn-glow:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
